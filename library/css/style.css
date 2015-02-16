@@ -1,0 +1,321 @@
+/*! Made with Bones: http://themble.com/bones :) */
+/******************************************************************
+Site Name: Staffroom
+Author: David Fravigar
+
+Stylesheet: Main Stylesheet
+
+******************************************************************/
+
+/*****************************************************************
+General
+*****************************************************************/
+html,body
+{
+  height: 100%;
+}
+
+.row > div > img { width: 100%; display: block; }
+.row{
+	margin-top: 20px;
+}
+
+.panel{
+	border: none;
+}
+
+.panel-default{
+	border: none;
+}
+
+.panel-body{
+	border: none;
+}
+/*****************************************************************
+HEADER
+*****************************************************************/
+#site-header{
+	margin-top: 20px;
+}
+
+#site-header h3{
+  height: 30px;
+  display: block;
+  position: relative;
+  font-weight: 100;
+}
+
+#site-header h3 span{
+  color: #89BF50;
+  font-weight: 600;
+}
+
+#social-navigation img{
+  width:              35px;
+}
+
+#article-content{
+	font-family:        'Signika Negative', sans-serif;
+	text-align: 		justify;
+	line-height: 		1.5;
+}
+
+#term-select{
+  background: #89BF50;
+  colour: white;
+}
+
+#issue-select{
+  background: #4E4E70;
+  color: white;
+}
+
+/*****************************************************************
+MAGAZINE
+*****************************************************************/
+#key-dates-slider{
+  background: #f9f9f9;
+  width: 50%;
+  height: 150px;
+  float: left;
+}
+
+#espressos-section{
+  background: #75BCD2;
+  color: #fff;
+  height: 150px;
+  width: 50%;
+  float: right;
+  padding: 10px;
+}
+
+/*****************************************************************
+ARTICLE
+*****************************************************************/
+#article-content{
+
+}
+
+#social-share, .share-social{
+  color: #454565;
+  height: 100%;
+}
+
+#social-share ul, .share-social ul{
+  margin: 0;
+  padding: 0;
+}
+
+#social-share li, .share-social li{
+  display: inline;
+  padding: 5px;
+  font-size: 14px;
+}
+
+#social-share a, .share-social a{
+  padding: 12px;
+  border-radius: 0;
+}
+
+#social-share a:hover, .share-social a:hover{
+  opacity: 0.6;
+}
+
+.social-btn{
+  border: none;
+  background: #454565;
+  width: 46%;
+  height: 40px;
+  color: #f9f9f9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.social-btn:hover{
+  cursor: pointer;
+}
+
+.author-info{
+   text-align: justify;
+   margin-top: 20px;
+}
+
+.author-image{
+  position: relative;
+  width: 100%;
+  top: 20px;
+  background: #dce5e0;
+  color: #809f90;
+}
+
+.author-image img{
+  width: 100%;
+}
+
+.author-image p{
+  position:  absolute;
+  top: 10px;
+  left: 20px;
+  width: 40%;
+  color: #809f90;
+  font: bold 20px/30px ;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+.author-bio{
+  padding: 40px 20px;
+  background: #dce5e0;
+  color: #809f90;
+  font-weight: 100;
+}
+
+.author-link a{
+	 background: #809f90;
+	 width: 60%;
+	 padding: 5px;
+	 padding-left: 20px;
+}
+
+
+
+#article-advert, #secondary-advert{
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: #809f90;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: justify;
+  font-weight: 100;
+}
+
+#article-advert a, #secondary-advert a{
+  color: white;
+  text-decoration: none;
+}
+
+.advert-title, .advert-phone, .advert-link{
+  font-size: 34px;
+  text-align: left;
+}
+
+.advert-phone, .advert-link{
+    margin-top: -10px;
+}
+
+#further-reading{
+  padding: 20px;
+  clear: both;
+}
+
+#further-reading h3{
+  font-weight: 100;
+}
+
+#further-reading span>img{
+  width: 25px;
+  padding-right: 10px;
+}
+
+#page-bottom{
+
+}
+
+
+
+/*****************************************************************
+FOOTER
+*****************************************************************/
+#inner-footer{
+  background-image: url('../images/footer-image.png');
+  margin: 1px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+#footer-text{
+  color: white;
+  padding-bottom: 10px;
+  font-weight: 100;
+}
+
+#footer-text a{
+	padding-top: 5px;
+}
+
+/*****************************************************************
+Media Queries
+*****************************************************************/
+@media (max-width: 767px){
+	#secondary-advert{
+		display: none;
+	}
+
+	.share-social{
+		display: none;
+	}
+}
+
+/**
+ * Metaslider Pro
+ * --------------
+ */
+
+.metaslider .flexslider {
+  margin-bottom: 5px !important;
+}
+.flex-direction-nav a {
+  background: url("./images/slider/bg_direction_nav.png") no-repeat scroll 0 0 !important;
+  opacity: 0.7 !important;
+}
+.flex-direction-nav .flex-prev {
+    left: -66px !important;
+}
+.flex-direction-nav .flex-next {
+    background-position: -76px 0 !important;
+    right: -66px !important;
+}
+.metaslider_container_left_mask,
+.metaslider_container_right_mask {
+  display: block;
+  position: absolute;
+  z-index: 50000;
+  opacity: 0.7;
+  height: 480px;
+  background-color: #fff;
+}
+.slide-left {
+  display: block;
+  width: 475px;
+  height: 480px;
+  border-radius: 3px;
+  float: left;
+}
+.slide-right-top {
+  display: block;
+  width: 475px;
+  height: 235px;
+  border-radius: 3px;
+  margin-bottom: 10px !important;
+  float: right;
+}
+.slide-right-bottom {
+  display: block;
+  width: 475px;
+  height: 235px;
+  border-radius: 3px;
+  float: right;
+}
+
+.slide1 .slide-left { background: url("./images/slider/slide1-left.png") 0 0 no-repeat; }
+.slide1 .slide-right-top { background: url("./images/slider/slide1-right-top.png") 0 0 no-repeat; }
+.slide1 .slide-right-bottom { background: url("./images/slider/slide1-right-bottom.png") 0 0 no-repeat; }
+
+.slide2 .slide-left { background: url("./images/slider/slide2-left.png") 0 0 no-repeat; }
+.slide2 .slide-right-top { background: url("./images/slider/slide2-right-top.png") 0 0 no-repeat; }
+.slide2 .slide-right-bottom { background: url("./images/slider/slide2-right-bottom.png") 0 0 no-repeat; }
+
+.slide3 .slide-left { background: url("./images/slider/slide3-left.png") 0 0 no-repeat; }
+.slide3 .slide-right-top { background: url("./images/slider/slide3-right-top.png") 0 0 no-repeat; }
+.slide3 .slide-right-bottom { background: url("./images/slider/slide3-right-bottom.png") 0 0 no-repeat; }

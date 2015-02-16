@@ -1,0 +1,41 @@
+<?php
+/**
+ * Staffroom Magazine Landing Page
+ */
+get_header();?>
+	<main id="site-main">
+		<section class="magazine-title">
+
+	</section>
+		<section class="contents-slider">
+			<?php /* The loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<header class="entry-header">
+						<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
+						<div class="entry-thumbnail">
+							<?php the_post_thumbnail(); ?>
+						</div>
+						<?php endif; ?>
+					</header><!-- .entry-header -->
+
+					<div class="entry-content">
+						<?php the_content(); ?>
+						<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+					</div><!-- .entry-content -->
+				</article><!-- #post -->
+			<?php endwhile; ?>
+
+		</section>
+		<section class="container">
+			<div class="key-dates-slider">
+
+			</div>
+
+			<div class="espressos-section">
+				<h3>Educational Espressos</h3>
+				<?php get_sidebar('sidebar1'); ?>
+			</div>
+		</section>
+	</main>
+<?php get_footer() ?>

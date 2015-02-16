@@ -1,0 +1,55 @@
+.bones-metabox-label{
+	display: block;
+	background: #f9f9f9;
+	padding: 5px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	padding-left: 20px;
+	border: 1px solid #D4D4D4;
+}
+
+.bones-metabox-input{
+	width: 100%;
+	display: block;
+}
+
+.article-container{
+	background: #f9f9f9 !important;
+	margin: 15px;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
+.article-header{
+	background: #d4d4d4;
+	margin-bottom: 10px;
+}
+
+.article-content{
+	margin: 15px;
+}
+
+.article-content img{
+	width: 100%;
+	border: 1px solid #D4D4D4;
+}
+
+
+.clear{
+	clear: both;
+	min-height: 1px;
+}
+
+@media (max-width: 767px){
+	.article-container{
+		width: 100%;
+	}
+
+	.article-image{
+		width: 100%;
+	}
+}
